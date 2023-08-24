@@ -1,5 +1,46 @@
-.countries {
+.countries--first {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: row;
+}
+.countries--second {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: end;
+}
+.countries--third {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.countries--third .country--brazil {
+  display: flex;
+  align-self: end;
+}
+.countries--fourth {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.countries--fourth :nth-child(3),
+.countries--fourth :nth-child(4) {
+  display: flex;
+  align-self: center;
+}
+.countries--fifth {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+  justify-content: space-around;
+}
+.countries--fifth .country--laos {
+  display: flex;
+  order: 1;
+}
+.countries--fifth .country--uganda {
+  align-self: center;
   display: flex;
 }
-
-/* Add your own CSS code below */
